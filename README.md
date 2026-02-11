@@ -24,8 +24,12 @@ npm start
 ## Notes
 This project was made for learning and personal use (based on YouTube tutorials).
 
+## Prototype
+Figma link: https://www.figma.com/design/IQxit1pEpvDArhufBw4GfZ/Kalender?node-id=0-1&t=feKmzbrYIixWeLrN-1
+
 ## Credits
 Date display tutorial: https://youtu.be/btxGSJ3Dh8E
 
 
 To-do list tutorial: https://youtu.be/G0jO8kUrg-I
+
