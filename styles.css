@@ -1,0 +1,202 @@
+* {
+  box-sizing: border-box;
+}
+
+
+body {
+  user-select: none;
+  -webkit-app-region: drag;
+  font-family: "Jura", sans-serif, bold;
+  justify-content: center;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 5px;
+  padding-top: 10px;
+}
+
+.app {
+  background: rgba(253, 121, 121, 0.5);
+  width: 170px;
+  height: 129px;
+  border-radius: 8px;
+  color: white;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  display: flex;
+  padding: 0px;
+}
+
+#calendar {
+  justify-content: center;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+#day {
+    font-size: 96px;
+    font-weight: 300;
+    width: 88px;
+    height: 114px;
+    line-height: 1.1;
+    margin: 0;
+}
+
+#month {
+    font-size: 32px;
+    font-weight: 300;
+    width: 131px;
+    height: 38px;
+    line-height: 0;
+    margin: 0;
+}
+
+.to-do, .to-do * { -webkit-app-region: no-drag; }
+
+.to-do {
+    
+    background: rgba(253, 121, 121, 0.5);
+    width: 260px;
+    height: 259px;
+    border-radius: 8px;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    display: flex;
+    font-size: 24px;
+    font-weight: 300;
+}
+
+.to-dobackground-dark {
+    background-color: #FD7979;
+    width: 250px;
+    height: 249px;
+    border-radius: 8px;
+    gap: 8px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 5px;
+}
+
+.todo-heading {
+    background-color: #FFCDC9;
+    color: #FD7979;
+    width: 236px;
+    height: 27px;
+    border-radius: 8px;
+    padding: 5px;
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+}
+
+.todo-list {
+    background-color: #FFCDC9;
+  color: #FD7979;
+  width: 236px;
+  flex: 1;
+  border-radius: 8px;
+  padding: 8px;
+  display: block;
+  text-align: left;
+  overflow: auto;
+}
+
+.row {
+    background-color: #FEEAC9;
+    color: #FD7979;
+    border-radius: 8px;
+    display: flex;
+    align-items: flex-start;
+    justify-content: space-between;
+}
+
+input {
+    border: none;
+    outline: none;
+    background: transparent;
+    padding: 3px;
+}
+
+button {
+    border: none;
+    outline: none;
+    padding: 3px;
+    background-color: #FD7979;
+    color: white;
+    border-radius: 8px;
+    width: 50px;
+}
+
+ul li {
+    list-style: none;
+    user-select: none;
+    cursor: pointer;
+    margin: 0;
+    padding: 0;
+    width: 100%;
+}
+
+.todo-list ul{
+  margin: 0;
+  padding: 8px;
+  list-style: none;
+}
+
+.todo-list{
+  text-align: left;
+}
+
+.todo-list li{
+  display: flex;
+  align-items: center;
+  justify-content: space-between; /* lükkab risti lõppu */
+  gap: 8px;
+  padding: 6px 8px;
+}
+
+.task-text{ flex: 1; }
+
+.todo-list .row {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+}
+
+.delete{
+  background: transparent;
+  border: none;
+  padding: 0 6px;
+  cursor: pointer;
+  color: #FD7979;
+  font-size: 18px;
+  line-height: 1;
+}
+
+li.checked .task-text {
+    color: #FEEAC9;
+  text-decoration: line-through;
+  opacity: 0.6;
+}
+
+li .delete {
+  text-decoration: none !important;
+}
+
+input,
+button,
+textarea,
+select {
+  -webkit-app-region: no-drag;
+  cursor: pointer;
+}
+
+html, body {
+  margin: 0;
+  height: 100%;
+  background: #FEEAC9;
+}

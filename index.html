@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Jura:wght@300..700&display=swap" rel="stylesheet">
+    <meta charset="UTF-8" />
+    <title>app name</title>
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+
+  <body>
+    <div class="app">
+      <div id="calendar">
+        <div id="day"></div>
+        <div id="month"></div>
+      </div>
+    </div>
+
+    <div class="to-do">
+        <div class="to-dobackground-dark">
+            <div class="todo-heading">TO DO:</div>
+            <div class="todo-list">
+                <div class="row">
+                    <input type="text" id="input-box" placeholder="Don’t forget…">
+                    <button onclick="addTask()">Add</button>
+                </div>
+                <ul id="list-container">
+                </ul>
+            </div>
+        </div>
+    </div>
+    <script src="script.js"></script>
+  </body>
+</html>
