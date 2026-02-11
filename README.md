@@ -19,11 +19,13 @@ You can add tasks, mark them as done, and delete them. Tasks are saved in `local
 ```bash
 npm install
 npm start
+```
 
 ## Notes
 This project was made for learning and personal use (based on YouTube tutorials).
 
 ## Credits
 Date display tutorial: https://youtu.be/btxGSJ3Dh8E
+
 
 To-do list tutorial: https://youtu.be/G0jO8kUrg-I
